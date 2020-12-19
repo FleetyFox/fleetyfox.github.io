@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ИС - Расписание занятий</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="shortcut icon" href="favicon.ico">
+
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <a id="logo-mob" href="/"><img src="ttsm.png" alt=""></a>
+            <a id="logo" href="/"><img src="tt.png" alt=""></a>
+            <ul class="middle-ul">
+                <li><a href="/index.html" title="ВТиПО" ><i class="fa fa-th-list"></i><span class="disable-text">ВТиПО</span></a></li>
+                <li><a href="/inu.html" title="ИнУ"><i class="fa fa-th-list"></i><span class="disable-text">ИнУ</span></a></li>
+                <li><a href="/is.html" title="ИС" class="activepage"><i class="fa fa-th-list"></i><span class="disable-text">ИС</span></a></li>
+            </ul>
+            <ul class="bottom-ul">
+                <li class="fleety"><a href="https://t.me/fleetyfox"><i class="fa fa-user"></i><span class="disable-text">by FleetyFox</span></a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="navbar">
+                <ul class="navbar-ul">
+                    <li><a href="/"><img src="ttsm.png" alt=""></a></li>
+                    <li><a href="/index.html" >ВТиПО</a></li>
+                    <li><a href="/inu.html" >ИнУ</a></li>
+                    <li><a href="/is.html" class="activepage">ИС</a></li>
+                </ul>
+                <ul class="navbar-ul-left">
+                    <li id="time"></li>
+                </ul>
+                <ul class="navbar-ul-right">
+                    <li id="time"></li>
+                    <li><a href="https://cdo.ineu.kz/login/index.php">Вход</a></li>
+                    <li id="profile"><i class="fa fa-user-circle fa-lg"></i></li>
+                </ul>
+            </div>
+                <div class="main-c">
+                    <div class="wrap">
+                        <ul class="dn">
+                            <li><a id="day1js" href="#day1">Понедельник</a></li>
+                            <li><a id="day2js" href="#day2">Вторник</a></li>
+                            <li><a id="day3js" href="#day3">Среда</a></li>
+                            <li><a id="day4js" href="#day4">Четверг</a></li>
+                            <li><a id="day5js" href="#day5">Пятница</a></li>
+                            <li><a id="day6js" href="#day6">Суббота</a></li>
+                            <li><a id="day7js" href="#day7">Воскресенье</a></li>
+                        </ul>
+                    </div>
+                    <div class="wrap">
+                        <h1>Текущее занятие:</h1>
+                        <div class="wrap-content">
+                            <table>
+                                <thead>
+                                    <th>Время</th>
+                                    <th>Название</th>
+                                    <th>Преподаватель</th>
+                                    <th>Ссылки</th>
+                                </thead>
+                                <tr>
+                                    <td id="current-time"></td>
+                                    <td id="current-name"></td>
+                                    <td id="current-prep"></td>
+                                    <td id="current-links"></td>
+                                </tr>
+                            </table>
+                            <span id="zoom"></span>
+
+                        </div>
+                    </div>
+                    <div id="day1" class="wrap">
+                        <h1>Понедельник</h1>
+                        <div class="wrap-content">
+                            <table>
+                                <thead>
+                                    <th>Время</th>
+                                    <th>Название</th>
+                                    <th>Преподаватель</th>
+                                    <th>Ссылки</th>
+                                </thead>
+                                <tr >
+                                    <td>8:00-8:50</td>
+                                    <td><span class="desktop-name">Модели и методы управления</span><span class="mobile-name">МиМу</span><span class="type lection">Лекция</span></td>
+                                    <td>Ляшенко И.И.</td>
+                                    <td>
+                                        <a href="" onClick="window.open('https://cdo.ineu.kz/mod/chat/gui_ajax/index.php?id=1114', 'Chat', 'Width=800, Height=600')">Чат</a>
+                                        <a href="https://cdo.ineu.kz/course/view.php?id=1144">Страница курса</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>9:00-9:50</td>
+                                    <td><span class="desktop-name">Модели и методы управления</span><span class="mobile-name">МиМу</span><span class="type practice">Практика</span></td>
+                                    <td>Ляшенко И.И.</td>
+                                    <td>
+                                        <a href="" onClick="window.open('https://cdo.ineu.kz/mod/chat/gui_ajax/index.php?id=1114', 'Chat', 'Width=800, Height=600')">Чат</a>
+                                        <a href="https://cdo.ineu.kz/course/view.php?id=1144">Страница курса</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>10:00-10:50</td>
+                                    <td><span class="desktop-name">Взаимодействие человека с компьютером</span><span class="mobile-name">ВЧсК</span><span class="type lab">Лабораторная работа</span></td>
+                                    <td>Прокопец Е.В.</td>
+                                    <td>
+                                        <a href="" onClick="window.open('https://cdo.ineu.kz/mod/chat/gui_ajax/index.php?id=5574', 'Chat', 'Width=800, Height=600')">Чат</a>
+                                        <a href="https://cdo.ineu.kz/course/view.php?id=5553">Страница курса</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>11:00-11:50</td>
+                                    <td><span class="desktop-name">Взаимодействие человека с компьютером</span><span class="mobile-name">ВЧсК</span><span class="type lab">Лабораторная работа</span></td>
+                                    <td>Прокопец Е.В.</td>
+                                    <td>
+                                        <a href="" onClick="window.open('https://cdo.ineu.kz/mod/chat/gui_ajax/index.php?id=5574', 'Chat', 'Width=800, Height=600')">Чат</a>
+                                        <a href="https://cdo.ineu.kz/course/view.php?id=5553">Страница курса</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>12:20-13:10</td>
+                                    <td><span class="desktop-name">Численные методы</span><span class="mobile-name">ЧМ(о)</span><span class="type srsp">СРСП</span></td>
+                                    <td>Бокаева М.С.</td>
+                                    <td>
+                                        <a href="" onClick="window.open('https://cdo.ineu.kz/mod/chat/gui_ajax/index.php?id=1602', 'Chat', 'Width=800, Height=600')">Чат</a>
+                                        <a href="https://cdo.ineu.kz/course/view.php?id=1621">Страница курса</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="day2" class="wrap">
+                        <h1>Вторник</h1>
+                        <div class="wrap-content">
+                            <table>
+                                <thead>
+                                    <th>Время</th>
+                                    <th>Название</th>
+                                    <th>Преподаватель</th>
+                                    <th>Ссылки</th>
+                                </thead>
+                                <tr>
+                                    <td>8:00-8:50</td>
+                                    <td><span class="desktop-name">Иностранный язык(В1)</span><span class="mobile-name">ИнЯз</span><span class="type practice">Практика</span></td>
+                                    <td>Атыгаева Ж.Е.</td>
+                                    <td>
+                                        <a href="" onClick="window.open('https://cdo.ineu.kz/mod/chat/gui_ajax/index.php?id=7475', 'Chat', 'Width=800, Height=600')">Чат</a>
+                                        <a href="https://cdo.ineu.kz/course/view.php?id=7358">Страница курса</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>9:00-9:50</td>
+                                    <td><span class="desktop-name">Иностранный язык(В1)</span><span class="mobile-name">ИнЯз</span><span class="type practice">Практика</span></td>
+                                    <td>Атыгаева Ж.Е.</td>
+                                    <td>
+                                        <a href="" onClick="window.open('https://cdo.ineu.kz/mod/chat/gui_ajax/index.php?id=7475', 'Chat', 'Width=800, Height=600')">Чат</a>
+                                        <a href="https://cdo.ineu.kz/course/view.php?id=7358">Страница курса</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>10:00-10:50</td>
+                                    <td><span class="desktop-name">Иностранный язык(В1)</span><span class="mobile-name">ИнЯз</span><span class="type practice">Практика</span></td>
+                                    <td>Атыгаева Ж.Е.</td>
+                                    <td>
+                                        <a href="" onClick="window.open('https://cdo.ineu.kz/mod/chat/gui_ajax/index.php?id=7475', 'Chat', 'Width=800, Height=600')">Чат</a>
+                                        <a href="https://cdo.ineu.kz/course/view.php?id=7358">Страница курса</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>11:00-11:50</td>
+                                    <td><span class="desktop-name">Инструментальные средства разработки программ</span><span class="mobile-name">ИСРП</span><span class="type lection">Лекция</span></td>
+                                    <td>Ляшенко И.И.</td>
+                                    <td>
+                                        <a href="" onClick="window.open('https://cdo.ineu.kz/mod/chat/gui_ajax/index.php?id=2059', 'Chat', 'Width=800, Height=600')">Чат</a>
+                                        <a href="https://cdo.ineu.kz/course/view.php?id=2062">Страница курса</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>12:20-13:10</td>
+                                    <td><span class="desktop-name">Инструментальные средства разработки программ</span><span class="mobile-name">ИСРП</span><span class="type practice">Практика</span></td>
+                                    <td>Ляшенко И.И.</td>
+                                    <td>
+                                        <a href="" onClick="window.open('https://cdo.ineu.kz/mod/chat/gui_ajax/index.php?id=2059', 'Chat', 'Width=800, Height=600')">Чат</a>
+                                        <a href="https://cdo.ineu.kz/course/view.php?id=2062">Страница курса</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>13:20-14:10</td>
+                                    <td><span class="desktop-name">Взаимодействие человека с компьютером</span><span class="mobile-name">ВЧсК</span><span class="type srsp">СРСП</span></td>
+                                    <td>Прокопец Е.В.</td>
+                                    <td>
+                                        <a href="" onClick="window.open('https://cdo.ineu.kz/mod/chat/gui_ajax/index.php?id=5574', 'Chat', 'Width=800, Height=600')">Чат</a>
+                                        <a href="https://cdo.ineu.kz/course/view.php?id=5553">Страница курса</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="day3" class="wrap">
+                        <h1>Среда</h1>
+                        <div class="wrap-content">
+                            <table>
+                                <thead>
+                                    <th>Время</th>
+                                    <th>Название</th>
+                                    <th>Преподаватель</th>
+                                    <th>Ссылки</th>
+                                </thead>
+                                <tr>
+                                    <td>8:00-8:50</td>
+                                    <td><span class="desktop-name">Взаимодействие человека с компьютером</span><span class="mobile-name">ВЧсК</span><span class="type lection">Лекция</span></td>
+                                    <td>Прокопец Е.В.</td>
+                                    <td>
+                                        <a href="" onClick="window.open('https://cdo.ineu.kz/mod/chat/gui_ajax/index.php?id=5574', 'Chat', 'Width=800, Height=600')">Чат</a>
+                                        <a href="https://cdo.ineu.kz/course/view.php?id=5553">Страница курса</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>9:00-9:50</td>
+                                    <td><span class="desktop-name">Взаимодействие человека с компьютером</span><span class="mobile-name">ВЧсК</span><span class="type practice">Практика</span></td>
+                                    <td>Прокопец Е.В.</td>
+                                    <td>
+                                        <a href="" onClick="window.open('https://cdo.ineu.kz/mod/chat/gui_ajax/index.php?id=5574', 'Chat', 'Width=800, Height=600')">Чат</a>
+                                        <a href="https://cdo.ineu.kz/course/view.php?id=5553">Страница курса</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>10:00-10:50</td>
+                                    <td><span class="desktop-name">Инструментальные средства разработки программ</span><span class="mobile-name">ИСРП</span><span class="type lab">Лабораторная работа</span></td>
+                                    <td>Ляшенко И.И.</td>
+                                    <td>
+                                        <a href="" onClick="window.open('https://cdo.ineu.kz/mod/chat/gui_ajax/index.php?id=2059', 'Chat', 'Width=800, Height=600')">Чат</a>
+                                        <a href="https://cdo.ineu.kz/course/view.php?id=2062">Страница курса</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>11:00-11:50</td>
+                                    <td><span class="desktop-name">Инструментальные средства разработки программ</span><span class="mobile-name">ИСРП</span><span class="type lab">Лабораторная работа</span></td>
+                                    <td>Ляшенко И.И.</td>
+                                    <td>
+                                        <a href="" onClick="window.open('https://cdo.ineu.kz/mod/chat/gui_ajax/index.php?id=2059', 'Chat', 'Width=800, Height=600')">Чат</a>
+                                        <a href="https://cdo.ineu.kz/course/view.php?id=2062">Страница курса</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="day4" class="wrap">
+                        <h1>Четверг</h1>
+                        <div class="wrap-content">
+                            <table>
+                                <thead>
+                                    <th>Время</th>
+                                    <th>Название</th>
+                                    <th>Преподаватель</th>
+                                    <th>Ссылки</th>
+                                </thead>
+                                <tr>
+                                    <td>10:00-10:50</td>
+                                    <td><span class="desktop-name">Численные методы</span><span class="mobile-name">ЧМ(о)</span><span class="type lab">Лабораторная работа</span></td>
+                                    <td>Бокаева М.С.</td>
+                                    <td>
+                                        <a href="" onClick="window.open('https://cdo.ineu.kz/mod/chat/gui_ajax/index.php?id=1602', 'Chat', 'Width=800, Height=600')">Чат</a>
+                                        <a href="https://cdo.ineu.kz/course/view.php?id=1621">Страница курса</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>11:00-11:50</td>
+                                    <td><span class="desktop-name">Численные методы</span><span class="mobile-name">ЧМ(о)</span><span class="type lab">Лабораторная работа</span></td>
+                                    <td>Бокаева М.С.</td>
+                                    <td>
+                                        <a href="" onClick="window.open('https://cdo.ineu.kz/mod/chat/gui_ajax/index.php?id=1602', 'Chat', 'Width=800, Height=600')">Чат</a>
+                                        <a href="https://cdo.ineu.kz/course/view.php?id=1621">Страница курса</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>12:20-13:10</td>
+                                    <td><span class="desktop-name">Иностранный язык(В1)</span><span class="mobile-name">ИнЯз</span><span class="type practice">Практика</span></td>
+                                    <td>Атыгаева Ж.Е.</td>
+                                    <td>
+                                        <a href="" onClick="window.open('https://cdo.ineu.kz/mod/chat/gui_ajax/index.php?id=7475', 'Chat', 'Width=800, Height=600')">Чат</a>
+                                        <a href="https://cdo.ineu.kz/course/view.php?id=7358">Страница курса</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>13:20-14:10</td>
+                                    <td><span class="desktop-name">Иностранный язык(В1)</span><span class="mobile-name">ИнЯз</span><span class="type srsp">СРСП</span></td>
+                                    <td>Атыгаева Ж.Е.</td>
+                                    <td>
+                                        <a href="" onClick="window.open('https://cdo.ineu.kz/mod/chat/gui_ajax/index.php?id=7475', 'Chat', 'Width=800, Height=600')">Чат</a>
+                                        <a href="https://cdo.ineu.kz/course/view.php?id=7358">Страница курса</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>14:20-15:10</td>
+                                    <td><span class="desktop-name">Модели и методы управления</span><span class="mobile-name">МиМу</span><span class="type srsp">СРСП</span></td>
+                                    <td>Ляшенко И.И.</td>
+                                    <td>
+                                        <a href="" onClick="window.open('https://cdo.ineu.kz/mod/chat/gui_ajax/index.php?id=1114', 'Chat', 'Width=800, Height=600')">Чат</a>
+                                        <a href="https://cdo.ineu.kz/course/view.php?id=1144">Страница курса</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>15:20-16:10</td>
+                                    <td><span class="desktop-name">Инструментальные средства разработки программ</span><span class="mobile-name">ИСРП</span><span class="type srsp">СРСП</span></td>
+                                    <td>Ляшенко И.И.</td>
+                                    <td>
+                                        <a href="" onClick="window.open('https://cdo.ineu.kz/mod/chat/gui_ajax/index.php?id=2059', 'Chat', 'Width=800, Height=600')">Чат</a>
+                                        <a href="https://cdo.ineu.kz/course/view.php?id=2062">Страница курса</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="day5" class="wrap">
+                        <h1>Пятница</h1>
+                        <div class="wrap-content">
+                            <table>
+                                <thead>
+                                    <th>Время</th>
+                                    <th>Название</th>
+                                    <th>Преподаватель</th>
+                                    <th>Ссылки</th>
+                                </thead>
+                                <tr>
+                                    <td>8:00-8:50</td>
+                                    <td><span class="desktop-name">IT-инфраструктура</span><span class="mobile-name">ITИнф</span><span class="type lab">Лабораторная работа</span></td>
+                                    <td>Тюлюгенова Л.Б.</td>
+                                    <td>
+                                        <a href="" onClick="window.open('https://cdo.ineu.kz/mod/chat/gui_ajax/index.php?id=5549', 'Chat', 'Width=800, Height=600')">Чат</a>
+                                        <a href="https://cdo.ineu.kz/course/view.php?id=5527">Страница курса</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>9:00-9:50</td>
+                                    <td><span class="desktop-name">IT-инфраструктура</span><span class="mobile-name">ITИнф</span><span class="type lab">Лабораторная работа</span></td>
+                                    <td>Тюлюгенова Л.Б.</td>
+                                    <td>
+                                        <a href="" onClick="window.open('https://cdo.ineu.kz/mod/chat/gui_ajax/index.php?id=5549', 'Chat', 'Width=800, Height=600')">Чат</a>
+                                        <a href="https://cdo.ineu.kz/course/view.php?id=5527">Страница курса</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>10:00-10:50</td>
+                                    <td><span class="desktop-name">Численные методы</span><span class="mobile-name">ЧМ(о)</span><span class="type lection">Лекция</span></td>
+                                    <td>Бокаева М.С.</td>
+                                    <td>
+                                        <a href="" onClick="window.open('https://cdo.ineu.kz/mod/chat/gui_ajax/index.php?id=1602', 'Chat', 'Width=800, Height=600')">Чат</a>
+                                        <a href="https://cdo.ineu.kz/course/view.php?id=1621">Страница курса</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>11:00-11:50</td>
+                                    <td><span class="desktop-name">Численные методы</span><span class="mobile-name">ЧМ(о)</span><span class="type practice">Практика</span></td>
+                                    <td>Бокаева М.С.</td>
+                                    <td>
+                                        <a href="" onClick="window.open('https://cdo.ineu.kz/mod/chat/gui_ajax/index.php?id=1602', 'Chat', 'Width=800, Height=600')">Чат</a>
+                                        <a href="https://cdo.ineu.kz/course/view.php?id=1621">Страница курса</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>12:20-13:10</td>
+                                    <td><span class="desktop-name">Модели и методы управления</span><span class="mobile-name">МиМу</span><span class="type lab">Лабораторная работа</span></td>
+                                    <td>Ляшенко И.И.</td>
+                                    <td>
+                                        <a href="" onClick="window.open('https://cdo.ineu.kz/mod/chat/gui_ajax/index.php?id=1114', 'Chat', 'Width=800, Height=600')">Чат</a>
+                                        <a href="https://cdo.ineu.kz/course/view.php?id=1144">Страница курса</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>13:20-14:10</td>
+                                    <td><span class="desktop-name">Модели и методы управления</span><span class="mobile-name">МиМу</span><span class="type lab">Лабораторная работа</span></td>
+                                    <td>Ляшенко И.И.</td>
+                                    <td>
+                                        <a href="" onClick="window.open('https://cdo.ineu.kz/mod/chat/gui_ajax/index.php?id=1114', 'Chat', 'Width=800, Height=600')">Чат</a>
+                                        <a href="https://cdo.ineu.kz/course/view.php?id=1144">Страница курса</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="day6" class="wrap">
+                        <h1>Суббота</h1>
+                        <div class="wrap-content">
+                            <p>Отдыхай :)</p>
+                        </div>
+                    </div>
+                    <div id="day7" class="wrap">
+                        <h1>Воскресенье</h1>
+                        <div class="wrap-content">
+                            <p>Отдыхай :)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <script src="current_is.js"></script>
+</body>
+</html>

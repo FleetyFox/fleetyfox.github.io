@@ -51,7 +51,7 @@ function main() {
         
     document.getElementById('time').innerHTML = (time4nav);
         
-    if((time >= 700 && time < 800) ||(time >= 850 && time < 900) || (time >= 950 && time < 1000 ) || (time >= 1050 && time < 1100) || ( time >= 1150 && time < 1220 )){document.querySelector("#tz").innerHTML = "Скоро начнется:"}
+    if((time >= 700 && time < 800) ||(time >= 850 && time < 900) || (time >= 950 && time < 1000 ) || (time >= 1050 && time < 1100) || ( time >= 1150 && time < 1220 ) || (time >= 1310 && time < 1320) || (time >= 1410 && time < 1420) || (time >= 1510 && time < 1520)){document.querySelector("#tz").innerHTML = "Скоро начнется:"}
     if (Day == 1) {
         document.getElementById('day1js').style.backgroundColor = 'rgba(255,255,255,.4';
         if (time >= 700 && time < 800){
